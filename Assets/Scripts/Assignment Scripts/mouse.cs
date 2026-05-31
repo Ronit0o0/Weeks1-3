@@ -3,7 +3,8 @@ using UnityEngine.InputSystem;
 
 public class mouse : MonoBehaviour
 {
-    public float mustacheTarget;
+    public float distanceThreshold = 1f;
+    public Transform mustacheTarget;
     public Vector3 startValue;
     public Vector3 endValue;
     public float durationValue;
@@ -19,20 +20,26 @@ public class mouse : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Convert the mouse position from screen space to world space
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
         mousePosition.z = 0f;
 
-        float distance = Vector3.Distance(mousePosition, transform.position);
+        // Calculate the distance between the mouse position and the mustache
+        float distance = Vector3.Distance(mousePosition, mustacheTarget.position);
 
-        if (distance < mustacheTarget)
+        // If the distance is less than the threshold then move the eyes, eyebrows, and ears up using the lerp function
+        if (distance < distanceThreshold)
         {
-            Debug.Log("it worked");
+            // Debug.Log("it worked");
 
+            // Increase the progress to allow the Lerp to work and move the object from the start value to the end value over time
             progress += Time.deltaTime;
 
-            currentValue = Vector3.Lerp (startValue, endValue, progress / durationValue);
+            //Lerp the objects from the start postion to the end position
+            currentValue = Vector3.Lerp (transform.localPosition, endValue, progress / durationValue);
 
-            transform.position = currentValue;
+            //Set the position of the objects to the current value variable which is the lerp values
+            transform.localPosition = currentValue;
         }
     }
 }

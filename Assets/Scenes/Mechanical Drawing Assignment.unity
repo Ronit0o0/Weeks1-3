@@ -333,7 +333,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Sweat
   startValue: {x: -2.76, y: 7, z: 0}
   endValue: {x: -2.76, y: 3.8, z: 0}
-  durationValue: 4
+  durationValue: 2
   currentValue: {x: 0, y: 0, z: 0}
 --- !u!4 &294551879
 Transform:
@@ -443,6 +443,97 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &386280269
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 386280270}
+  - component: {fileID: 386280271}
+  m_Layer: 0
+  m_Name: EarR (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &386280270
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386280269}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.1767862, y: 0.0048116203, z: 0}
+  m_LocalScale: {x: 0.41192475, y: 0.41192478, z: 0.41192478}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 401231108}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &386280271
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386280269}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Color: {r: 0.95294124, g: 0.7960785, b: 0.6431373, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 0
 --- !u!1 &401231107
 GameObject:
   m_ObjectHideFlags: 0
@@ -470,10 +561,11 @@ Transform:
   m_GameObject: {fileID: 401231107}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.05444, y: 1.1369, z: 0}
+  m_LocalPosition: {x: 8.1, y: 1.25, z: 0}
   m_LocalScale: {x: 1.1878784, y: 2.0783, z: 2.0783}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 386280270}
   m_Father: {fileID: 1316273304}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &401231109
@@ -547,9 +639,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6cbfb6c51f11c5478f1faae30893afc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::mouse
-  mustacheTarget: 0
-  startValue: {x: 8.05444, y: 1.1369, z: 0}
-  endValue: {x: 8.05444, y: 2.48, z: 0}
+  distanceThreshold: 1.5
+  mustacheTarget: {fileID: 899240393}
+  startValue: {x: 8.1, y: 1.25, z: 0}
+  endValue: {x: 8.1, y: 2.11, z: 0}
   durationValue: 2
   currentValue: {x: 0, y: 0, z: 0}
 --- !u!1 &422123518
@@ -870,7 +963,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6cbfb6c51f11c5478f1faae30893afc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::mouse
-  mustacheTarget: 0
+  distanceThreshold: 1.5
+  mustacheTarget: {fileID: 899240393}
   startValue: {x: 0.15, y: 3.4, z: 0}
   endValue: {x: 0.15, y: 4.37, z: 0}
   durationValue: 2
@@ -1238,7 +1332,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Sweat
   startValue: {x: 3.51, y: 7, z: 0}
   endValue: {x: 3.51, y: 3.2, z: 0}
-  durationValue: 4
+  durationValue: 2
   currentValue: {x: 0, y: 0, z: 0}
 --- !u!4 &802869305
 Transform:
@@ -1452,7 +1546,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6cbfb6c51f11c5478f1faae30893afc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::mouse
-  mustacheTarget: 0
+  distanceThreshold: 0
+  mustacheTarget: {fileID: 899240393}
   startValue: {x: 0, y: 0, z: 0}
   endValue: {x: 0, y: 0, z: 0}
   durationValue: 0
@@ -1490,6 +1585,97 @@ Transform:
   - {fileID: 1601696513}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1078647760
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1078647761}
+  - component: {fileID: 1078647762}
+  m_Layer: 0
+  m_Name: EarR (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1078647761
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078647760}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.111674406, y: 0.0014194641, z: 0}
+  m_LocalScale: {x: 0.41192472, y: 0.41192478, z: 0.41192478}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1482826167}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1078647762
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078647760}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Color: {r: 0.6792453, g: 0.57704216, b: 0.4773941, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 0
 --- !u!1 &1207482965
 GameObject:
   m_ObjectHideFlags: 0
@@ -1648,7 +1834,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.745283, g: 0.6571726, b: 0.5730242, a: 1}
+  m_Color: {r: 0.74509805, g: 0.65882355, b: 0.57254905, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1744,7 +1930,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Sweat
   startValue: {x: 0.43, y: 7, z: 0}
   endValue: {x: 0.43, y: 4, z: 0}
-  durationValue: 4
+  durationValue: 2
   currentValue: {x: 0, y: 0, z: 0}
 --- !u!4 &1388988108
 Transform:
@@ -1975,7 +2161,8 @@ Transform:
   m_LocalPosition: {x: -3.11556, y: 1.1369001, z: 0}
   m_LocalScale: {x: 1.1878784, y: 2.0783, z: 2.0783}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1078647761}
   m_Father: {fileID: 1316273304}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1482826168
@@ -2049,7 +2236,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6cbfb6c51f11c5478f1faae30893afc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::mouse
-  mustacheTarget: 0
+  distanceThreshold: 1.5
+  mustacheTarget: {fileID: 899240393}
   startValue: {x: -3.11556, y: 1.1369, z: 0}
   endValue: {x: -3.11556, y: 2.11, z: 0}
   durationValue: 2
@@ -2945,7 +3133,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6cbfb6c51f11c5478f1faae30893afc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::mouse
-  mustacheTarget: 0
+  distanceThreshold: 1.5
+  mustacheTarget: {fileID: 899240393}
   startValue: {x: 4.9, y: 3.4, z: 0}
   endValue: {x: 4.9, y: 4.37, z: 0}
   durationValue: 2
