@@ -1452,7 +1452,6 @@ GameObject:
   m_Component:
   - component: {fileID: 899240393}
   - component: {fileID: 899240392}
-  - component: {fileID: 899240394}
   m_Layer: 0
   m_Name: Mustache
   m_TagString: Untagged
@@ -1534,24 +1533,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1316273304}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &899240394
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 899240391}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6cbfb6c51f11c5478f1faae30893afc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::mouse
-  distanceThreshold: 0
-  mustacheTarget: {fileID: 899240393}
-  startValue: {x: 0, y: 0, z: 0}
-  endValue: {x: 0, y: 0, z: 0}
-  durationValue: 0
-  currentValue: {x: 0, y: 0, z: 0}
 --- !u!1 &1030556916
 GameObject:
   m_ObjectHideFlags: 0
