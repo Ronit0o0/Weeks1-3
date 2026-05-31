@@ -7,9 +7,8 @@ public class Sweat : MonoBehaviour
     public Vector3 endValue;
     public float durationValue;
     public Vector3 currentValue;
-    private float progress = 1f;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private float progress = 0f;
+        void Start()
     {
         
     }
@@ -25,6 +24,5 @@ public class Sweat : MonoBehaviour
 
         //Sets the position of the object to currentValue which is the value from the Lerp function
         transform.position = currentValue;
-        
     }
 }
